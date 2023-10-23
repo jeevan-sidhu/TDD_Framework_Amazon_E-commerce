@@ -1,17 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Amazon E-commerce]">
-  <test thread-count="5" name="System_Testing(failed)">
+  <test thread-count="5" name="Registration_Module(failed)">
+    <classes>
+      <class name="test_layer.Registration_Test">
+        <methods>
+          <include name="close"/>
+          <include name="start"/>
+          <include name="Registration_TC7_invalid_password_less_than_6"/>
+          <include name="Registration_TC11_existing_customer"/>
+          <include name="open_homepage"/>
+          <include name="open_registration_page"/>
+          <include name="Registration_TC6_blank_password"/>
+          <include name="Registration_TC1_blank_your_name_field"/>
+          <include name="Registration_TC9_invalid_password_again"/>
+          <include name="Registration_TC3_blank_mobile_email"/>
+        </methods>
+      </class> <!-- test_layer.Registration_Test -->
+    </classes>
+  </test> <!-- Registration_Module(failed) -->
+  <test thread-count="5" name="Login_Module(failed)">
+    <classes>
+      <class name="test_layer.Login_Test">
+        <methods>
+          <include name="Sign_in_TC5_incorrect_password"/>
+          <include name="start"/>
+          <include name="open_login_page"/>
+          <include name="close"/>
+          <include name="Sign_in_TC7_keep_me_signed_in_checked"/>
+          <include name="open_homepage"/>
+        </methods>
+      </class> <!-- test_layer.Login_Test -->
+    </classes>
+  </test> <!-- Login_Module(failed) -->
+  <test thread-count="5" name="Guest_Module(failed)">
     <classes>
       <class name="test_layer.Guest_Test">
         <methods>
           <include name="start"/>
           <include name="Guest_TC2_Buy_Product"/>
           <include name="close"/>
-          <include name="Guest_TC1_Navigate_Products"/>
           <include name="open_homepage"/>
         </methods>
       </class> <!-- test_layer.Guest_Test -->
     </classes>
-  </test> <!-- System_Testing(failed) -->
+  </test> <!-- Guest_Module(failed) -->
+  <test thread-count="5" name="Search_Module(failed)">
+    <classes>
+      <class name="test_layer.Search_Test">
+        <methods>
+          <include name="Search_TC65_Sort_by_Price_High_to_Low_and_Filter_by_Customer_Rating"/>
+          <include name="Search_TC77_Sort_by_Avg_Customer_Review_and_Filter_by_Price"/>
+          <include name="Search_TC74_Sort_by_Avg_Customer_Review_and_Filter_by_Online_Saving"/>
+          <include name="start"/>
+          <include name="Search_TC69_Sort_by_Price_High_to_Low_and_Filter_by_Price"/>
+          <include name="Search_TC57_Sort_by_Price_Low_to_High_and_Filter_by_Customer_Rating"/>
+          <include name="Search_TC73_Sort_by_Avg_Customer_Review_and_Filter_by_Customer_Rating"/>
+          <include name="login"/>
+          <include name="Search_TC60_Sort_by_Price_Low_to_High_and_Filter_by_Brand"/>
+          <include name="open_homepage"/>
+          <include name="Search_TC68_Sort_by_Price_High_to_Low_and_Filter_by_Brand"/>
+          <include name="logout"/>
+          <include name="Search_TC46_Sort_by_Avg_customer_review"/>
+          <include name="Search_TC61_Sort_by_Price_Low_to_High_and_Filter_by_Price"/>
+          <include name="Search_TC66_Sort_by_Price_High_to_Low_and_Filter_by_Online_Saving"/>
+          <include name="Search_TC76_Sort_by_Avg_Customer_Review_and_Filter_by_Brand"/>
+          <include name="Search_TC58_Sort_by_Price_Low_to_High_and_Filter_by_Online_Saving"/>
+          <include name="Search_TC36_Filter_by_Brand_and_Price"/>
+          <include name="Search_TC44_Sort_by_price_low_to_high"/>
+          <include name="Search_TC45_Sort_by_price_high_to_low"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- test_layer.Search_Test -->
+    </classes>
+  </test> <!-- Search_Module(failed) -->
+  <test thread-count="5" name="Addresses_Module(failed)">
+    <classes>
+      <class name="test_layer.Addresses_Test">
+        <methods>
+          <include name="Address_TC6_TC7_TC8_TC9_Invalid_Phone_Number" invocation-numbers="0 1 2 3"/>
+          <include name="start"/>
+          <include name="Go_To_Addresses"/>
+          <include name="Address_TC11_Blank_Address"/>
+          <include name="Address_TC15_blank_City"/>
+          <include name="close"/>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="Address_TC17_Invalid_Postal_Code"/>
+          <include name="Address_TC4_Blank_full_name"/>
+          <include name="Address_TC14_Invalid_City_and_Province"/>
+          <include name="Address_TC18_blank_Postal_Code"/>
+        </methods>
+      </class> <!-- test_layer.Addresses_Test -->
+    </classes>
+  </test> <!-- Addresses_Module(failed) -->
 </suite> <!-- Failed suite [Amazon E-commerce] -->

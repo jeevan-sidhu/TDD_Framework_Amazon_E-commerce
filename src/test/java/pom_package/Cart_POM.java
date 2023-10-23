@@ -67,10 +67,11 @@ public class Cart_POM extends Base_Amazon {
 		}
 	}
 	
-	public void del_items_in_cart(int num) {
+	public void del_items_in_cart(int num) throws InterruptedException {
 		int total_items = del_bttns.size();
 		for(int i=0; i<num;i++) {
 			del_bttns.get(0).click();
+			Thread.sleep(2000);
 			while(del_bttns.size()!=total_items-1) {
 				continue;
 			}

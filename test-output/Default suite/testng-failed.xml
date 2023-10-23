@@ -3,32 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test_layer.Search_Test">
+      <class name="test_layer.Login_Test">
         <methods>
-          <include name="Search_TC65_Sort_by_Price_High_to_Low_and_Filter_by_Customer_Rating"/>
-          <include name="Search_TC77_Sort_by_Avg_Customer_Review_and_Filter_by_Price"/>
-          <include name="Search_TC74_Sort_by_Avg_Customer_Review_and_Filter_by_Online_Saving"/>
           <include name="start"/>
-          <include name="Search_TC69_Sort_by_Price_High_to_Low_and_Filter_by_Price"/>
-          <include name="Search_TC57_Sort_by_Price_Low_to_High_and_Filter_by_Customer_Rating"/>
-          <include name="login"/>
-          <include name="Search_TC73_Sort_by_Avg_Customer_Review_and_Filter_by_Customer_Rating"/>
-          <include name="Search_TC60_Sort_by_Price_Low_to_High_and_Filter_by_Brand"/>
-          <include name="open_homepage"/>
-          <include name="Search_TC68_Sort_by_Price_High_to_Low_and_Filter_by_Brand"/>
-          <include name="logout"/>
-          <include name="Search_TC61_Sort_by_Price_Low_to_High_and_Filter_by_Price"/>
-          <include name="Search_TC66_Sort_by_Price_High_to_Low_and_Filter_by_Online_Saving"/>
-          <include name="Search_TC46_Sort_by_Avg_customer_review"/>
-          <include name="Search_TC76_Sort_by_Avg_Customer_Review_and_Filter_by_Brand"/>
-          <include name="Search_TC58_Sort_by_Price_Low_to_High_and_Filter_by_Online_Saving"/>
-          <include name="Search_TC36_Filter_by_Brand_and_Price"/>
-          <include name="Search_TC44_Sort_by_price_low_to_high"/>
-          <include name="Search_TC45_Sort_by_price_high_to_low"/>
-          <include name="Search_TC5_Pagination"/>
+          <include name="Sign_in_TC5_incorrect_password"/>
+          <include name="open_login_page"/>
           <include name="close"/>
+          <include name="Sign_in_TC7_keep_me_signed_in_checked"/>
+          <include name="open_homepage"/>
         </methods>
-      </class> <!-- test_layer.Search_Test -->
+      </class> <!-- test_layer.Login_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

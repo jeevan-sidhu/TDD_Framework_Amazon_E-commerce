@@ -1,8 +1,37 @@
 <suite name="Amazon E-commerce">
-	<test name="System_Testing" allow-return-values="true">
+	<test name="Registration_Module" allow-return-values="true">
 		<classes>
 			<class name="test_layer.Registration_Test" />
+		</classes>
+	</test>
+	<test name="Login_Module" allow-return-values="true">
+		<classes>
+			<class name="test_layer.Login_Test" />
+		</classes>
+	</test>
+	<test name="Guest_Module" allow-return-values="true">
+		<classes>
 			<class name="test_layer.Guest_Test" />
+		</classes>
+	</test>
+	<test name="Search_Module" allow-return-values="true">
+		<classes>
+			<class name="test_layer.Search_Test" />
+		</classes>
+	</test>
+	<test name="Shopping_Cart_Module" allow-return-values="true">
+		<classes>
+			<class name="test_layer.ShoppingCart_Test" />
+		</classes>
+	</test>
+	<test name="Addresses_Module" allow-return-values="true">
+		<classes>
+			<class name="test_layer.Addresses_Test" />
+		</classes>
+	</test>
+	<test name="Orders_Module" allow-return-values="true">
+		<classes>
+			<class name="test_layer.Orders_Test" />
 		</classes>
 	</test>
 

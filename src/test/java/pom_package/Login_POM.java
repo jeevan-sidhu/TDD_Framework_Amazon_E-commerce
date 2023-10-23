@@ -1,5 +1,6 @@
 package pom_package;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -55,8 +56,14 @@ public class Login_POM extends Base_Amazon {
 	}
 	
 	public boolean wrong_pass_err_display() {
-		return wrong_pass_err.isDisplayed();
+		try {
+			return wrong_pass_err.isDisplayed();
+		}
+		catch(NoSuchElementException e) {
+			return false;
+		}
 	}
+	
 	
 	public String get_acc_text() {
 		return account.getText();

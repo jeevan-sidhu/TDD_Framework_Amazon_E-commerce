@@ -7,6 +7,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import base_package.Base_Amazon;
 import pom_package.Account_POM;
@@ -78,7 +79,10 @@ public class Login_Test extends Base_Amazon {
 		log.type_password(prop.getProperty("password"));
 		log.click_submit();
 		String actual = log.get_acc_text();
-		Assert.assertEquals(actual, "Hello, town");
+		SoftAssert sf = new SoftAssert();
+		sf.assertEquals(actual, "Hello, town");
+		acc.click_signout();
+		sf.assertAll();
 	}
 	
 	@Test(priority=7)
