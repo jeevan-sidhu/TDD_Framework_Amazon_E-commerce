@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Amazon E-commerce]">
+  <test thread-count="5" name="System_Testing(failed)">
+    <classes>
+      <class name="test_layer.Guest_Test">
+        <methods>
+          <include name="start"/>
+          <include name="Guest_TC2_Buy_Product"/>
+          <include name="close"/>
+          <include name="Guest_TC1_Navigate_Products"/>
+          <include name="open_homepage"/>
+        </methods>
+      </class> <!-- test_layer.Guest_Test -->
+    </classes>
+  </test> <!-- System_Testing(failed) -->
+</suite> <!-- Failed suite [Amazon E-commerce] -->

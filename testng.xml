@@ -1,0 +1,9 @@
+<suite name="Amazon E-commerce">
+	<test name="System_Testing" allow-return-values="true">
+		<classes>
+			<class name="test_layer.Registration_Test" />
+			<class name="test_layer.Guest_Test" />
+		</classes>
+	</test>
+
+</suite>
